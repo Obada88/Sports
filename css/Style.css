@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,600;0,700;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 68.68%;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    background-color: hsl(180, 12%, 8%);
+}
+
+/* ================== Start Section Navbar ================= */
+.navbar-brand{
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: hsl(79, 72%, 55%);
+    height: 2px;
+    left: 0;
+    bottom: -0.02rem;
+    transition: 0.5s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.nav-link:hover{
+    color:  hsl(79, 72%, 55%);
+}
+.active{
+    color:  hsl(79, 72%, 55%) !important;   
+}
+.navbar.scrolled {
+    background-color: hsl(180, 12%, 8%);
+  }
+/* ================== End Section Navbar ================= */
+
+/* ================== Start Section Home ================= */
+.box-content-home{
+    margin: 8rem;
+}
+.box-content-home h3{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.box-content-home h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.box-content-home p{
+    color: hsl(79, 6%, 64%);
+}
+.btn-home{
+    background-color:hsl(79, 72%, 55%) ;
+    padding: 1rem;
+    color: #000 !important;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+
+.btn-home:hover{
+    letter-spacing: 1px;
+}
+
+.box-home{
+    background-color:hsl(79, 72%, 55%) ;
+    clip-path: polygon(89% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 29% 11%);
+}
+.box-img-home img{
+    max-width: 100%;
+    text-align: center;
+}
+/* ================== End Section Home ================= */
+
+
+/* ================== Start Section About ================= */
+.header-About{
+    text-align: center;
+}
+.header-About h3{
+    color:hsl(79, 72%, 55%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 1rem;
+}
+.header-About h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fff;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.box-about{
+    margin-top: 2.5rem;
+    background-color:  hsl(180, 4%, 12%);
+    padding: 1.5rem;
+    height: 30rem;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    object-fit: contain;
+}
+
+.box-about:hover{
+    background-color:hsl(79, 72%, 55%) ;
+}
+.box-about:hover .box-contetn-about h5{
+    color: #000;
+}
+
+.box-about:hover .box-contetn-about p{
+    color: #000;
+}
+.box-contetn-about img{
+    max-width: 100%;
+    background-color:  hsl(180, 4%, 98%);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.box-contetn-about h5{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.box-contetn-about p{
+    color: hsl(79, 6%, 64%);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+}
+.fa-arrow-right{
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+.box-about:hover .fa-arrow-right{
+    opacity: 1;
+}
+/* ================== End Section About ================= */
+
+
+/* ================== End Section Chooes ================= */
+.box-img-chooes{
+    background-color: hsl(79, 72%, 55%);
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+
+}
+
+.box-img-chooes img{
+    max-width: 100%;
+}
+.box-content-chooes{
+    margin: 5rem;
+}
+.box-content-chooes h3{
+    color:hsl(79, 72%, 55%);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+
+.box-content-chooes h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.box-content-chooes p{
+    color: hsl(79, 6%, 64%);
+    text-align: center;
+    margin-top: 1.5rem;
+
+
+}
+
+.number-program{
+    display: flex;
+    justify-content: space-evenly;
+}
+.number-program span{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+.number-program h6{
+    color: hsl(79, 6%, 64%);
+    margin-top: 1.2rem;
+    
+
+}
+/* ================== End Section Chooes ================= */
+
+
+/* ================== Start Section Pricing ================= */
+.box-pricing{
+    background-color:  hsl(180, 4%, 12%);
+    height: 35rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+.box-pricing-contetn{
+position: relative;
+}
+.box-pricing-contetn img{
+    max-width: 100%;
+    background-color:  hsl(79, 6%, 64%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: start;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -1.5rem;
+}
+.box-pricing-contetn h3{
+     color: #fff;
+     font-size: 2.3rem;
+     text-transform: uppercase;
+     font-weight: bolder;
+}
+.box-pricing-contetn h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.list-chooes{
+    text-align: center;
+}
+
+.list-chooes h6{
+    color: hsl(79, 6%, 64%);
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+.list-chooes h6 i{
+    margin-right: 1rem;
+    color: hsl(79, 72%, 55%);
+}
+.color-li{
+    opacity: 0.3;
+}
+.Premium{
+    background-color:hsl(79, 72%, 55%) ;
+}
+.Premium-color{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/**** Caluate***********/
+.box-content-cal{
+    margin-top: 18rem;
+}
+.box-content-cal h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.box-content-cal p{
+    color:hsl(79, 6%, 64%);
+    font-size: 1.2rem;
+}
+.box-input-cal{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.box-input-cal input{
+    padding: 1rem;
+    border: 2px solid hsl(79, 72%, 55%) !important;
+    background-color: hsl(180, 4%, 12%);
+    caret-color: #fff;
+    color: #fff;
+    outline: none;
+    margin: 1.5rem;
+}
+.hegiht-1{
+    position: relative;
+}
+.hegiht-1 span{
+    color: #fff;
+    position: absolute;
+    right: -15.5rem;
+    top: 2.5rem;
+    
+}
+.hegiht{
+    position:relative;
+}
+.hegiht span{
+    color: #fff;
+    position: absolute;
+    right: -15.5rem;
+    top: 2.5rem;
+    
+}
+
+.button-cal{
+    position: relative;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.btn-cal{
+    position: absolute;
+    left: 22%;
+    text-decoration: none;
+    background-color: hsl(79, 72%, 55%) ;
+    color: #000 !important;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;    
+}
+.opacity-1{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.btn-cal:hover .opacity-1{
+    transform: translateX(0.25rem);
+}
+
+.box-img-cal img{
+    max-width: 100%;
+    width: 400px;
+}
+.green-color{
+    color: hsl(79, 72%, 55%);
+    font-size: 1.2rem;
+
+}
+.red-color{
+    color: #f00;
+    font-size: 1.2rem;
+}
+/* ================== End Section Pricing ================= */
+
+
+/* ================== End Section Footer ================= */
+.footer{
+    margin-top: 5rem;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-content-footer p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.input-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-footer input{
+    padding: 1rem;
+    border: 2px solid hsl(79, 72%, 55%) !important;
+    background-color: hsl(180, 4%, 12%);
+    caret-color: #fff;
+    color: #fff;
+    outline: none;
+}
+
+.btn-footer{
+    background-color:hsl(79, 72%, 55%) ;
+    padding: 1rem;
+    color: #000 !important;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    margin: 1.5rem;
+}
+.btn-footer:hover{
+    letter-spacing: 1px;
+}
+.icons-footer{
+    margin-top: 2.5rem;
+}
+.icons-footer i{
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color:hsl(79, 72%, 55%)  ;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+/* ================== End Section Footer ================= */
+
+/* ================== End Section buttonScroll ================= */
+button#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1.5rem;
+    border: 1px solid hsl(79, 72%, 55%) ;
+    outline: hsl(79, 72%, 55%);
+    background-color:hsl(79, 72%, 55%) ;
+    color: hsl(180, 4%, 12%);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 3px;
+    transition: ease-in 0.2s;
+  }
+  
+
+  
+/* ================== End Section buttonScroll ================= */
+
+
+/* ================== Make Responsive ================= */
+@media(max-width:991px){
+    .button-register{
+        justify-content: center;
+    }
+    .header-About h3{
+        font-size: 2.5rem;
+    }
+    .header-About h1{
+        font-size: 1.5rem;
+    }
+    .box-about{
+        width: 200px;
+        height:26rem;
+    }
+    .box-contetn-about h5{
+        font-size: 1.2rem;
+    }
+    .box-contetn-about p{
+        font-size: 1.2rem;
+    }
+    .hegiht span{
+        right: -14.5rem;
+    }
+    .hegiht-1 span{
+        right: -14.5rem;
+
+    }
+    .box-img-cal img{
+        margin-top: 10rem;
+    }
+    .box-pricing-contetn h3{
+        font-size: 1.3rem;
+    }
+    .footer-row {
+        flex-wrap: wrap;
+    }
+}
